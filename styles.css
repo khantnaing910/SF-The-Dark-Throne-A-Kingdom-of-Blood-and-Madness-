@@ -1,0 +1,38 @@
+body {
+    font-family: 'Helvetica', sans-serif;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    position: relative; /* Required for absolute positioning of background */
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh; /* Sets the height to full viewport height */
+    width: 100vw;
+    z-index: -1; /* Ensure it stays behind other content */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    opacity: 0.5; /* Optional: Adjust opacity for better text visibility */
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+button {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #666;
+}
