@@ -120,7 +120,7 @@ function makeChoice(choiceIndex) {
     scoreMorality += impact[2];
 
     const result = gameScenarios[currentScenarioIndex].choices[choiceIndex].result;
-    document.getElementById("result").innerText = result;
+    alert(result); // Alert the result instead of displaying it
 
     currentScenarioIndex++;
     if (currentScenarioIndex < gameScenarios.length) {
@@ -142,14 +142,12 @@ function determineFinalOutcome() {
         outcome = "The Hollow Throne: Your reign has ended, not with a bang, but with a slow, agonizing decay. The choices you made, the lives you spared, the mercy you showed—all led to this moment. Your kingdom is weak, your enemies are strong, and now they come for you.\nThey do not kill you. No, they know a worse fate.\nYou are dragged from your throne, stripped of your royal garb, and paraded through the streets like a common criminal. The people jeer and spit at you, the very same people you tried to protect. They call you a failure, a coward, a king unworthy of power. You are thrown into a cage like an animal, left to rot in your own filth, surviving only on scraps thrown at you by those who once bowed before you.\nYears pass.\nYour body withers, your mind unravels. The world moves on, forgetting the name of the king who once ruled. The new rulers see you as nothing more than a relic of the past. Your existence is meaningless. You die nameless, broken, a ghost of the man you once were.\nNo songs are sung for you. No history books remember you.\nYou were, and then you were not.";
     }
 
+    alert(outcome); // Alert the final outcome instead of displaying it
     document.getElementById("restartButton").style.display = "block";
-
-    // Alert the outcome instead of displaying it
-    alert(outcome);
 
     // Show psychological profile
     const profile = getPsychologicalProfile(scoreSelfishness, scoreGreed, scoreMorality);
-    alert("Psychological Profile: " + profile); // Alert the profile as well
+    alert("Psychological Profile: " + profile); // Alert the psychological profile
 }
 
 function getPsychologicalProfile(selfishness, greed, morality) {
