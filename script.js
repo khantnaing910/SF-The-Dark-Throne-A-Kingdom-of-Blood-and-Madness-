@@ -119,7 +119,7 @@ function makeChoice(choiceIndex) {
     scoreGreed += impact[1];
     scoreMorality += impact[2];
 
-    const result = gameScenarios[currentScenarioIndex].choices[choiceIndex].result;
+    const result = gameScenarios[currentScenarioIndex].choices[choiceIndex].impact;
     alert(result); // Alert the result instead of displaying it
 
     currentScenarioIndex++;
