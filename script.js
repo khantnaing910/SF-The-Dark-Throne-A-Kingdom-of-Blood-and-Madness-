@@ -155,15 +155,45 @@ function getPsychologicalProfile(selfishness, greed, morality) {
     let profile = "";
 
     if (totalScore >= 10) {
-        profile = "The Crimson Tyrant: You are a ruler who thrives on power, cruelty, and absolute control. Your reign is soaked in blood, and fear is the foundation of your empire.";
+        profile = "The Crimson Tyrant: You are a ruler who thrives on power, cruelty, and absolute control. Your reign is soaked in blood, and fear is the foundation of your empire. Every decision you made prioritized dominance, destruction, and self-preservation at any cost.\n" +
+                  "Psychological Profile:\n" +
+                  "● Personality Type: High Machiavellianism, Narcissistic, Sadistic Tendencies\n" +
+                  "● Core Motivations: Power, Control, Legacy\n" +
+                  "● Fears: Losing Power, Appearing Weak\n" +
+                  "● Likely Real-Life Counterparts: Ruthless dictators, warlords, and historical conquerors.\n" +
+                  "Real-Life Parallels: You might excel in leadership roles that require cutthroat decision-making, such as corporate executives, political strategists, or military commanders. However, your lack of empathy makes personal relationships difficult, and betrayal is both your greatest weapon and your greatest weakness.";
     } else if (totalScore >= 5) {
-        profile = "The Dark Opportunist: You are neither wholly evil nor merciful—you rule with strategic ruthlessness. While you made some cruel decisions, they were calculated.";
+        profile = "The Dark Opportunist: You are neither wholly evil nor merciful—you rule with strategic ruthlessness. While you made some cruel decisions, they were calculated, ensuring your survival rather than being acts of pure malice.\n" +
+                  "Psychological Profile:\n" +
+                  "● Personality Type: Pragmatic, Calculating, Opportunistic\n" +
+                  "● Core Motivations: Power, Stability, Control\n" +
+                  "● Fears: Losing Influence, Being Outmaneuvered\n" +
+                  "● Likely Real-Life Counterparts: Shrewd politicians, crime lords, CEOs of monopolistic corporations.\n" +
+                  "Real-Life Parallels: You would thrive in politics, law, or business, where strategic thinking and ethical flexibility are valuable assets. However, your pragmatic nature may make you struggle with personal relationships, as trust is something you give sparingly.";
     } else if (totalScore >= 0) {
-        profile = "The Doomed Tyrant: You tried to balance power with morality, but in the end, you fell short. You made some brutal choices, but your hesitation left you vulnerable.";
+        profile = "The Doomed Tyrant: You tried to balance power with morality, but in the end, you fell short. You made some brutal choices, but your hesitation and occasional acts of mercy left you vulnerable.\n" +
+                  "Psychological Profile:\n" +
+                  "● Personality Type: Idealistic yet Pragmatic, Struggles with Moral Dissonance\n" +
+                  "● Core Motivations: Power, Control, Justice\n" +
+                  "● Fears: Losing Identity, Being Seen as Weak\n" +
+                  "● Likely Real-Life Counterparts: Failed revolutionaries, corrupt kings, misguided leaders.\n" +
+                  "Real-Life Parallels: You would do well in leadership positions but would struggle with the weight of responsibility. You may be ambitious but unsure of how far you’re willing to go.";
     } else if (totalScore >= -5) {
-        profile = "The Fallen King: You tried to rule justly, but justice alone is not enough. You showed mercy when you should have struck, and your enemies took advantage.";
+        profile = "The Fallen King: You tried to rule justly, but justice alone is not enough. You showed mercy when you should have struck, hesitated when you should have acted, and in the end, your enemies took advantage of your kindness.\n" +
+                  "Psychological Profile:\n" +
+                  "● Personality Type: Idealistic, Compassionate, Morally Conflicted\n" +
+                  "● Core Motivations: Justice, Honor, Morality\n" +
+                  "● Fears: Becoming a Monster, Betraying Personal Values\n" +
+                  "● Likely Real-Life Counterparts: Overthrown rulers, tragic heroes, historical figures who valued morality over survival.\n" +
+                  "Real-Life Parallels: You might be drawn to humanitarian work, activism, or teaching, where your sense of justice and morality can flourish. However, you may struggle in competitive environments that require ruthless decision-making.";
     } else {
-        profile = "The Martyr King: You ruled with compassion and sacrifice, making choices that prioritized humanity over power. Your reign ended in ruin, but your soul remained pure.";
+        profile = "The Martyr King: You ruled with compassion and sacrifice, making choices that prioritized humanity over power. You rejected cruelty, refused to give in to greed, and remained steadfast in your morality—even as your kingdom fell apart around you.\n" +
+                  "Psychological Profile:\n" +
+                  "● Personality Type: Self-Sacrificing, Deeply Moral, Altruistic\n" +
+                  "● Core Motivations: Justice, Compassion, Honor\n" +
+                  "● Fears: Becoming Corrupt, Failing to Protect Others\n" +
+                  "● Likely Real-Life Counterparts: Noble leaders who fell to treachery, philosophers who challenged power, martyrs.\n" +
+                  "Real-Life Parallels: You would thrive in charitable causes, spiritual leadership, or artistic pursuits that challenge societal norms. However, you may struggle in environments that require ruthless pragmatism, as you are unwilling to compromise on your values.";
     }
 
     return profile;
