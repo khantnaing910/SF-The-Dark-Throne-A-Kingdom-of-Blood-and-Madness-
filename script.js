@@ -1,13 +1,3 @@
-/*
-This JavaScript code replicates the functionality of the original Python code which used Tkinter.
-It assumes that the HTML page contains elements with the following IDs:
-  - "titleLabel" (for the scenario title)
-  - "textLabel" (for the scenario text)
-  - "button1" (for the first choice)
-  - "button2" (for the second choice)
-The messagebox.showinfo functionality from Tkinter is simulated using window.alert.
-*/
-
 var scoreSelfishness = 0;
 var scoreGreed = 0;
 var scoreMorality = 0;
