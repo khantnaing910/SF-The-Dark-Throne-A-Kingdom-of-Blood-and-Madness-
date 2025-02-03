@@ -1,7 +1,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(to right, #e0eafc, #cfdef3);
-    color: #2c3e50;
+    background: linear-gradient(to right, #2c3e50, #34495e); /* Darker gradient */
+    color: #ecf0f1; /* Light text color for contrast */
     margin: 0;
     padding: 20px;
 }
@@ -9,17 +9,17 @@ body {
 .container {
     max-width: 600px;
     margin: auto;
-    background: white;
+    background: rgba(44, 62, 80, 0.9); /* Semi-transparent dark background */
     padding: 30px;
     border-radius: 12px;
-    border: 1px solid #dcdcdc;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    border: 1px solid #7f8c8d; /* Darker border */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Stronger shadow for depth */
 }
 
 h1 {
     font-size: 28px;
     margin-bottom: 15px;
-    color: #2980b9;
+    color: #e74c3c; /* Dark red color for title */
     font-weight: bold;
 }
 
@@ -33,7 +33,7 @@ p {
 }
 
 button {
-    background: linear-gradient(to right, #007BFF, #0056b3);
+    background: linear-gradient(to right, #c0392b, #e74c3c); /* Dark red gradient */
     color: white;
     border: none;
     padding: 12px 20px;
@@ -45,12 +45,12 @@ button {
 }
 
 button:hover {
-    background: linear-gradient(to right, #0056b3, #007BFF);
+    background: linear-gradient(to right, #e74c3c, #c0392b); /* Reverse gradient on hover */
     transform: scale(1.05);
 }
 
 button:disabled {
-    background-color: #ccc;
+    background-color: #7f8c8d; /* Grey for disabled buttons */
     cursor: not-allowed;
 }
 
