@@ -52,6 +52,7 @@ button:hover {
 button:disabled {
     background-color: #7f8c8d; /* Grey for disabled buttons */
     cursor: not-allowed;
+    display: none;
 }
 
 .hidden {
