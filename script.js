@@ -123,12 +123,12 @@ function updateScenario() {
         
         var choices = Object.keys(scenario.choices);
         // Configure button1
-        button1.textContent = choices[0];
+        button1.textContent ='Choice 1:  '+ choices[0];
         button1.onclick = function() {
             makeChoice(choices[0]);
         };
         // Configure button2
-        button2.textContent = choices[1];
+        button2.textContent ='Choice 2:  '+ choices[1];
         button2.onclick = function() {
             makeChoice(choices[1]);
         };
@@ -147,13 +147,14 @@ function getPsychologicalProfile(selfishness, greed, morality) {
     } else if (totalScore >= 5 && totalScore <= 9) {
         profile = "The Dark Opportunist: You are neither wholly evil nor merciful—you rule with strategic ruthlessness. While you made some cruel decisions, they were calculated, ensuring your survival rather than being acts of pure malice. You are willing to betray, manipulate, and sacrifice others when necessary, but you do not indulge in senseless cruelty.\nPsychological Profile:\n● Personality Type: Pragmatic, Calculating, Opportunistic\n● Core Motivations: Power, Stability, Control\n● Fears: Losing Influence, Being Outmaneuvered\n● Likely Real-Life Counterparts: Shrewd politicians, crime lords, CEOs of monopolistic corporations\nReal-Life Parallels: You would thrive in politics, law, or business, where strategic thinking and ethical flexibility are valuable assets. However, your pragmatic nature may make you struggle with personal relationships, as trust is something you give sparingly.";
     } else if (totalScore >= 0 && totalScore <= 4) {
-        // Note: The original text was truncated. Here we replicate the available text.
         profile = "The Doomed Tyrant: You tried to balance power with morality, but in the end, you fell short. You made some brutal choices, but your hesitation and occasional acts of mercy left you vulnerable. You are a ruler who believed they could have it all—dominance without sacrificing humanity—but the world does not allow su";
-    } else {
-        // For negative total scores or other cases, provide a default conclusion.
-        profile = "A fractured ruler: Your choices have led you to a dark and conflicted path. The balance of power, greed, and morality in your decisions has created a legacy that is hard to define.";
+    }else if (totalScore >= -4 && totalScore <= -1){
+        profile = "The Fallen King: You tried to rule justly, but justice alone is not enough. You showed mercy when you should have struck, hesitated when you should have acted, and in the end, your enemies took advantage of your kindness. Your reign ended not in triumph but in tragedy.\nPsychological Profile:\n● Personality Type: Idealistic, Compassionate, Morally Conflicted\n● Core Motivations: Justice, Honor, Morality\n● Fears: Becoming a Monster, Betraying Personal Values\n● Likely Real-Life Counterparts: Overthrown rulers, tragic heroes, historical figures who valued morality over survival\nReal-Life Parallels: You might be drawn to humanitarian work, activism, or teaching, where your sense of justice and morality can flourish. However, you may struggle in competitive environments that require ruthless decision-making."
+    }else if (totalScore >= -9 && totalScore <= -5){
+        profile = "The Martyr King: You ruled with compassion and sacrifice, making choices that prioritized humanity over power. You rejected cruelty, refused to give in to greed, and remained steadfast in your morality—even as your kingdom fell apart around you. Your reign ended in ruin, but your soul remained pure.\nPsychological Profile:\n● Personality Type: Self-Sacrificing, Deeply Moral, Altruistic\n● Core Motivations: Justice, Compassion, Honor\n● Fears: Becoming Corrupt, Failing to Protect Others\n● Likely Real-Life Counterparts: Noble leaders who fell to treachery, philosophers who challenged power, martyrs\nReal-Life Parallels: You would thrive in charitable causes, spiritual leadership, or artistic pursuits that challenge societal norms. However, you may struggle in environments that require ruthless pragmatism, as you are unwilling to compromise on your values."
+    }else{
+        profile = "The Mad God: You embraced the abyss, welcoming the insanity that comes with ultimate power. You were not just cruel—you became something beyond human. You saw morality as weakness, justice as an illusion, and power as the only truth. You burned the world down, reveling in its destruction.\nPsychological Profile:\n● Personality Type: Megalomaniacal, Sociopathic, Chaotic\n● Core Motivations: Absolute Power, Destruction, Nihilism\n● Fears: Undetermined\n● Likely Real-Life Counterparts: Legends of gods, fallen deities, cult leaders, insane tyrants\nReal-Life Parallels: You would make an excellent horror villain, a symbol of chaos, or a figure feared in myth and legend. In reality, such people rarely survive long in power, as they eventually destroy themselves."
     }
-    
     return profile;
 }
 
