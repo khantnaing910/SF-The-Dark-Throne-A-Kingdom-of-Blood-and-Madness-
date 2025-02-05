@@ -95,7 +95,7 @@ var backgroundMusic;
 function initializeMusic() {
     backgroundMusic = new Audio('music.mp3'); // Make sure this matches your music file name
     backgroundMusic.loop = true; // Makes the music loop continuously
-    backgroundMusic.volume = 1; // Increased volume to 50%
+    backgroundMusic.volume = 0.5; // Increased volume to 50%
     
     // Try to play music when user interacts with the page
     document.addEventListener('click', function startMusic() {
