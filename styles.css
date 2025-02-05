@@ -1,60 +1,194 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(to right, #2c3e50, #34495e); /* Darker gradient */
-    color: #ecf0f1; /* Light text color for contrast */
+    background: linear-gradient(to right, #2c3e50, #34495e);
+    color: #ecf0f1;
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
-    max-width: 600px;
-    margin: auto;
-    background: rgba(44, 62, 80, 0.9); /* Semi-transparent dark background */
-    padding: 30px;
-    border-radius: 12px;
-    border: 1px solid #7f8c8d; /* Darker border */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Stronger shadow for depth */
+    width: 95%;
+    max-width: 900px;
+    margin: 20px;
+    background: rgba(44, 62, 80, 0.95);
+    padding: 40px;
+    border-radius: 15px;
+    border: 2px solid rgba(127, 140, 141, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    backdrop-filter: blur(10px);
 }
 
 h1 {
-    font-size: 28px;
-    margin-bottom: 15px;
-    color: #e74c3c; /* Dark red color for title */
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #e74c3c;
     font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 p {
-    font-size: 18px;
-    line-height: 1.6;
+    font-size: 1.3rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    text-align: justify;
 }
 
 .button-container {
-    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
 }
 
 button {
-    background: linear-gradient(to right, #c0392b, #e74c3c); /* Dark red gradient */
+    background: linear-gradient(to right, #c0392b, #e74c3c);
     color: white;
     border: none;
-    padding: 12px 20px;
-    border-radius: 5px;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
     cursor: pointer;
-    font-size: 18px;
-    margin: 5px;
-    transition: background-color 0.3s, transform 0.2s;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    text-align: center;
+    white-space: normal;
+    min-height: 60px;
 }
 
 button:hover {
-    background: linear-gradient(to right, #e74c3c, #c0392b); /* Reverse gradient on hover */
-    transform: scale(1.05);
+    background: linear-gradient(to right, #e74c3c, #c0392b);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    transform: translateY(1px);
 }
 
 button:disabled {
-    background-color: #7f8c8d; /* Grey for disabled buttons */
+    background: #7f8c8d;
     cursor: not-allowed;
-    display: none;
+    transform: none;
+    box-shadow: none;
+    opacity: 0.7;
 }
 
 .hidden {
     display: none;
 }
+
+/* Tablet and larger screens */
+@media (min-width: 768px) {
+    .container {
+        padding: 3rem;
+    }
+
+    .button-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    button {
+        width: calc(50% - 0.5rem);
+        min-height: 70px;
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 767px) {
+    .container {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        text-align: left;
+    }
+
+    button {
+        padding: 0.8rem 1.2rem;
+        font-size: 1.1rem;
+        min-height: 50px;
+    }
+}
+
+/* Small mobile devices */
+@media (max-width: 380px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}
+
+/* Update the keyframes for random-like movements */
+@keyframes float-1 {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-20px, 15px); }
+    50% { transform: translate(15px, -25px); }
+    75% { transform: translate(25px, 10px); }
+    100% { transform: translate(0, 0); }
+}
+
+@keyframes float-2 {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(25px, -15px); }
+    50% { transform: translate(-15px, 20px); }
+    75% { transform: translate(-25px, -10px); }
+    100% { transform: translate(0, 0); }
+}
+
+@keyframes float-3 {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(15px, 25px); }
+    50% { transform: translate(-25px, -15px); }
+    75% { transform: translate(10px, -25px); }
+    100% { transform: translate(0, 0); }
+}
+
+/* Update the orb styles */
+.orb {
+    position: fixed;
+    border-radius: 50%;
+    pointer-events: none;
+    opacity: 0.3;
+    z-index: -1;
+    background: radial-gradient(circle at 30% 30%, #e74c3c, #c0392b);
+    transition: all 0.3s ease;
+}
+
+.orb-1 { width: 80px; height: 80px; top: 15%; left: 10%; animation: float-1 12s ease-in-out infinite; }
+.orb-2 { width: 60px; height: 60px; top: 25%; left: 80%; animation: float-2 10s ease-in-out infinite; }
+.orb-3 { width: 40px; height: 40px; top: 60%; left: 20%; animation: float-3 11s ease-in-out infinite; }
+.orb-4 { width: 70px; height: 70px; top: 75%; left: 70%; animation: float-1 13s ease-in-out infinite; }
+.orb-5 { width: 50px; height: 50px; top: 40%; left: 40%; animation: float-2 9s ease-in-out infinite; }
+.orb-6 { width: 45px; height: 45px; top: 85%; left: 30%; animation: float-3 14s ease-in-out infinite; }
+.orb-7 { width: 65px; height: 65px; top: 30%; left: 60%; animation: float-1 15s ease-in-out infinite; }
+.orb-8 { width: 55px; height: 55px; top: 70%; left: 85%; animation: float-2 11s ease-in-out infinite; }
+.orb-9 { width: 75px; height: 75px; top: 5%; left: 45%; animation: float-3 13.5s ease-in-out infinite; }
+.orb-10 { width: 35px; height: 35px; top: 55%; left: 5%; animation: float-1 10.5s ease-in-out infinite; }
+.orb-11 { width: 45px; height: 45px; top: 90%; left: 50%; animation: float-2 12.5s ease-in-out infinite; }
+.orb-12 { width: 85px; height: 85px; top: 20%; left: 90%; animation: float-3 14.5s ease-in-out infinite; }
+.orb-13 { width: 30px; height: 30px; top: 45%; left: 75%; animation: float-1 11.5s ease-in-out infinite; }
+.orb-14 { width: 65px; height: 65px; top: 80%; left: 15%; animation: float-2 13.5s ease-in-out infinite; }
+.orb-15 { width: 55px; height: 55px; top: 10%; left: 25%; animation: float-3 15.5s ease-in-out infinite; }
