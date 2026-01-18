@@ -5,57 +5,53 @@
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
 
-**The Dark Throne** is an immersive, dark fantasy web experience developed as a collaborative science fair project. Dive into a world of gothic aesthetics and blood-soaked lore, built with modern web technologies.
+**The Dark Throne** is a small, atmospheric word-based choice game designed to explore and discover the player's mentality. Through a series of narrative-driven decisions in a dark fantasy setting, the game reflects the inner psyche of the person sitting upon the throne.
 
 ---
 
 ## 🧪 Science Fair Project
 
-This project was designed and developed for a **Science Fair** by a dedicated team of three students. At the time of creation, we were all attending **IGCSE Class A C0624**.
+This project was developed as a **Science Fair** entry. It combines creative storytelling with basic psychological exploration through interactive choices.
 
 ### 👥 The Team
+We are students from **IGCSE Class A C0624**:
 * **Khant Naing**
 * **Ye Zay Thaw**
 * **Nanda Aung**
 
 ---
 
-## 🌑 Overview
+## 🌑 About the Game
 
-This project serves as an interactive front-end interface for a dark fantasy setting. It combines striking visuals with smooth interactivity to create a compelling narrative atmosphere directly in the browser.
+The Dark Throne is not just a story; it is a psychological mirror. As players navigate the "Kingdom of Blood and Madness," every choice they make is tracked to provide insight into their decision-making process and temperament.
 
-## ✨ Features
-
+### ✨ Key Features
+* **Mentality Discovery:** Interactive choices that analyze player behavior and mindset.
+* **Word-Based Narrative:** A focus on high-quality text-based storytelling to drive immersion.
 * **Gothic UI/UX:** A custom-designed interface using CSS3 to evoke a sense of dread and majesty.
-* **Responsive Design:** Optimized for various screen sizes, ensuring the "Kingdom of Blood" looks sharp on both desktop and mobile.
-* **Dynamic Interactions:** Powered by vanilla JavaScript to handle state changes, animations, and user input.
-* **Thematic Styling:** Deep reds, obsidian blacks, and parchment textures to maintain a consistent dark fantasy atmosphere.
+* **Responsive Design:** Fully playable on both desktop and mobile browsers.
 
 ## 🛠️ Built With
 
-* **HTML5:** Semantic structure for accessibility and SEO.
-* **CSS3:** Custom properties (variables), Flexbox, and Grid for advanced layouts.
-* **JavaScript (ES6+):** Clean, modular logic for handling the "madness" behind the throne.
+* **HTML5:** Semantic structure for the narrative flow.
+* **CSS3:** Custom properties and animations to create a dark, gothic atmosphere.
+* **JavaScript (ES6+):** Logic for choice branching and mentality tracking.
 
-## 🚀 Getting Started
-
-To explore the project locally, follow these steps:
+## 🚀 How to Play
 
 1.  **Clone the repository:**
     ```bash
     git clone [https://github.com/khantnaing910/SF-The-Dark-Throne-A-Kingdom-of-Blood-and-Madness-.git](https://github.com/khantnaing910/SF-The-Dark-Throne-A-Kingdom-of-Blood-and-Madness-.git)
     ```
-2.  **Navigate to the project folder:**
-    ```bash
-    cd SF-The-Dark-Throne-A-Kingdom-of-Blood-and-Madness-
-    ```
-3.  **Open the project:**
-    Simply open `index.html` in your preferred web browser.
+2.  **Run the game:**
+    Simply open the `index.html` file in any modern web browser (Chrome, Firefox, Edge, or Safari).
+3.  **Make your choices:**
+    Read the prompts carefully and choose the path that best describes your reaction. At the end, your mentality will be revealed.
 
 ## 📜 Project Structure
 
 ```text
-├── index.html   # The structural foundation of the kingdom
-├── styles.css   # The aesthetic "blood and iron" of the UI
-├── script.js    # The logic and mechanics
+├── index.html   # The game's framework and story containers
+├── styles.css   # The "blood and iron" gothic aesthetic
+├── script.js    # The logic behind choices and mentality discovery
 └── README.md    # Project documentation
