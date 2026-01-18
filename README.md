@@ -14,7 +14,7 @@
 This project was developed as a **Science Fair** entry. It combines creative storytelling with basic psychological exploration through interactive choices.
 
 ### 👥 The Team
-We are students from **IGCSE Class A C0624**:
+We are students from **ConceptX IGCSE Class A C0624**:
 * **Khant Naing**
 * **Ye Zay Thaw**
 * **Nanda Aung**
