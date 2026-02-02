@@ -37,15 +37,10 @@ The Dark Throne is not just a story; it is a psychological mirror. As players na
 * **CSS3:** Custom properties and animations to create a dark, gothic atmosphere.
 * **JavaScript (ES6+):** Logic for choice branching and mentality tracking.
 
-## 🚀 How to Play
+## 🚀 Live Demo
+[View Live Site]([https://khantnaing910.github.io/EcoPulseEnergy-Calculator/](https://khantnaing910.github.io/SF-The-Dark-Throne-A-Kingdom-of-Blood-and-Madness-/)
 
-1.  **Clone the repository:**
-    ```bash
-    git clone [https://github.com/khantnaing910/SF-The-Dark-Throne-A-Kingdom-of-Blood-and-Madness-.git](https://github.com/khantnaing910/SF-The-Dark-Throne-A-Kingdom-of-Blood-and-Madness-.git)
-    ```
-2.  **Run the game:**
-    Simply open the `index.html` file in any modern web browser (Chrome, Firefox, Edge, or Safari).
-3.  **Make your choices:**
+   **Make your choices:**
     Read the prompts carefully and choose the path that best describes your reaction. At the end, your mentality will be revealed.
 
 ## 📜 Project Structure
