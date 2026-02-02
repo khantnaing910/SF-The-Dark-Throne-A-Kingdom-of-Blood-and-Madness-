@@ -38,7 +38,7 @@ The Dark Throne is not just a story; it is a psychological mirror. As players na
 * **JavaScript (ES6+):** Logic for choice branching and mentality tracking.
 
 ## 🚀 Live Demo
-[View Live Site]([https://khantnaing910.github.io/EcoPulseEnergy-Calculator/](https://khantnaing910.github.io/SF-The-Dark-Throne-A-Kingdom-of-Blood-and-Madness-/)
+[View Live Site]([https://khantnaing910.github.io/SF-The-Dark-Throne-A-Kingdom-of-Blood-and-Madness-/])
 
    **Make your choices:**
     Read the prompts carefully and choose the path that best describes your reaction. At the end, your mentality will be revealed.
